@@ -1,69 +1,55 @@
-<!DOCTYPE html>
-<html lang="br-BR">
-
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="Exemplo" content="Exemplo layout">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Curriculum Vitae</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Exercício Prático</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-
-
 <body>
-    <header>
-      <img class="logo"src="logo.jpg" alt="imagem logo">
-        <nav class="menu">
-            <a class="menu_item">Exemplo1</a>
-            <a class="menu_item">Exemplo2</a>
-            <a class="menu_item">Exemplo3</a>
-        </nav>
-     </header>
+  <header>
+      <img id="logo" src="logo2.png" alt="imagem logo">
+      <form action="/pagina-processa-dados-do-form" method="post">
+        <div>
+          <label for="nome">Login</label>
+          <input type="email" id="login" />
+        </div>
+        <div>
+          <label for="email">Cadastro</label>
+          <input type="email" id="cadastro" />
+        </div>
+      </form>
+  </header>
+    <nav>
+      <ul class="navbar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  <div id="container">    
+    <aside>
+      <form action="/search" method="get">
+        <label for="searchInput">Pesquisar:</label>
+        <input type="text" id="searchInput" name="q" placeholder="Digite aqui sua pesquisa" required>
+    </form>
 
-     <div id="container">
-        <aside> 
-          <section>
-             <p class="descricao"><strong>Auxiliar Administrativo com 5 anos de experiência.<br>Sempre em busca de adquirir novos conhecimentos e evoluir profissionalmente.</strong></p>
-          </section>
-
-          <section class="habilidades">
-            <h1>Habilidades</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae culpa voluptatem dolore possimus nobis libero debitis doloremque odio, iusto in.</p>
-          </section>
-
-          <section class="linguas">
-            <h1>Linguas</h1>
-            <p>Lorem.</p>
-            <p>Lorem.</p>
-            <p>Lorem.</p>
-          </section>
-        </aside>
-
-        <main>
-           <section class="experiencia">
-            <h1>Experiências</h1>
-            <ul>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, totam?</li>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem corrupti eveniet culpa numquam iste vel quibusdam, voluptatibus fugiat excepturi? Asperiores.</p>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, laudantium?</li>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, saepe. Nihil nam neque optio quis.</p>
-              <li>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, placeat vitae autem incidunt illo velit sequi blanditiis debitis obcaecati voluptatem.</p>
-              </li>
-            </ul>
-          </section>
-          <section class="academica">
-            <h1>Formação Acadêmica</h1>
-            <ul>
-              <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, consequatur.</li>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-              <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, nesciunt.</li>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-            </ul>
-
-          </section>
-        </main>   
-     </div>
+    <h2>Categorias</h2>
+    <ul id="menu-lateral">
+        <li><a href="#">Categoria 1</a></li>
+        <li><a href="#">Categoria 2</a></li>
+        <li><a href="#">Categoria 3</a></li>
+        <li><a href="#">Categoria 4</a></li>
+    </ul>
+    </aside>
+    <main>
+      <img id="imagemprincipal" src="conteudoprincipal.jpg" alt="imagem conteudo principal">
+      <p id="textoprincipal" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, sit quia! Magnam laudantium, minima voluptates iste modi iure eos voluptate earum vitae ipsum neque corporis quos ipsam error sed repellat dolorem, rerum natus? Quis neque alias velit cupiditate voluptas cum, est corrupti labore ex, reiciendis in, cumque quos possimus deserunt.</p>
+    </main>
+  </div>
+  <footer>
+    © 2024 Exercício Prático. Todos os direitos reservados.
+  </footer>
 </body>
-
 </html>

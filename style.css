@@ -1,101 +1,198 @@
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box; 
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html, body { height: 100%; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #2F2E33;
+}
+
+header {
+  padding: 25px;
+  background-color: #E7E7E7;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#logo{
+  max-width: 150px;
+  max-height: 150px;
+}
+
+aside {
+  height: 585px;
+  padding: 32px;
+  background-color: #E7E7E7;
+  max-width: 250px;
+}
+
+main {
+  height: 585px;
+  padding: 32px;
+  background-color: #FDF6F6;
+}
+
+#imagemprincipal{
+  max-width: 400px;
+  border-radius: 15px;
+  float: right;
+}
+
+#textoprincipal{
+  color:green;
+  text-align: center;
+  font-size: 20px;
+  max-width: 500px;
+  padding-left: 50px;
+  padding-top: 100px;
+}
+
+footer {
+  padding: 24px;
+  color: #FFF;
+  background-color: #3F6C45;
+  text-align: center;
+}
+
+
+nav {
+  background-color: #3F6C45;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.navbar li {
+  padding: 12px;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1); 
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.navbar  a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.navbar a:hover {
+  color: yellow;
+}
+
+form {
+  max-width: 200px; /* Define a largura máxima do formulário */
+  
+}
+
+/* Estilos para os campos de input e labels */
+form div {
+  margin-bottom: 5px; /* Adiciona espaço entre os campos */
+}
+
+label {
+  display: block; /* Exibe os labels em uma linha separada */
+  font-weight: bold; /* Deixa o texto dos labels em negrito */
+  margin-bottom: 5px; /* Adiciona espaço abaixo dos labels */
+}
+
+input {
+  width: 100%; /* Define a largura dos inputs como 100% */
+  padding: 6px; /* Adiciona espaço interno nos inputs */
+  border: 1px solid #ccc; /* Adiciona uma borda nos inputs */
+  border-radius: 15px; /* Adiciona uma borda arredondada nos inputs */
+}
+
+/* Estilos específicos para o botão de envio */
+button[type="submit"] {
+  width: 100%; /* Define a largura do botão como 100% */
+  padding: 10px; /* Adiciona espaço interno no botão */
+  background-color: #007bff; /* Cor de fundo do botão */
+  color: #fff; /* Cor do texto do botão */
+  border: none; /* Remove a borda do botão */
+  border-radius: 4px; /* Adiciona uma borda arredondada no botão */
+  cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+}
+
+#menu-lateral li a{
+  text-decoration: none;
+  color: black;
+  background-color: #bfd8c2;
+}
+
+#menu-lateral li{
+  list-style: none;
+  padding: 10px;
+}
+
+#menu-lateral{
+  padding-top: 20px;
+}
+
+aside h2{
+  padding-top: 100px;
+}
+
+
+@media (min-width: 768px) {
+  .navbar {
+    flex-flow: row wrap;
+    justify-content: end;
   }
   
-  header {
-    background-color: white;
-    color:  black;
-    padding: 20px;
+  .navbar li {
+    border-right: 1px solid rgba(255, 255, 255, 0.1); 
+  }
+  
+  #container {
     display: flex;
-    text-align: center;
-}
-
-    .menu {
-        align-items: center;
-        gap: 80px;
-        
-}
-
-.menu_item{
-    align-items: center;
-}
-  
-  .infopessoais{
-    list-style-type: none;
-    font-family:Arial, Helvetica, sans-serif;
   }
-  aside {
-    background-color: black;
-    color: white;
-
-    
-  }
-
-  .header .logo{
-    float: left; /* Para alinhar a imagem à esquerda */
-
-  }
-
-  .descricao{
-    padding-top: 15px;
-    text-align: center;
-    
-  
-  }
-  .habilidades{
-    padding-top: 70px;
-    text-align: center;
-    
-  }
-
-
-  .linguas{
-    text-align: center;
-    padding-top: 70px;
-    color: black;
-
-  }
-
   
   main {
-    background-color: rgb(59, 59, 59);
-    color: white;
-    padding: 32px;
+    flex: 75%; 
   }
 
-  .experiencia{
-    text-align: center;
-    padding-top: 80px;
+  #imagemprincipal{
+    display: flex;
   }
 
-  .academica{
-    text-align: center;
-    padding-top: 80px;
+  #textoprincipal{
+    display: flex;
   }
   
-  aside, main { 
-    padding: 32px; 
-    height: 585px;
+  aside {
+    flex: 25%;  
   }
-  
-  
-  
-  @media all and (min-width: 768px) {
-  
+ 
+}
+
+@media (max-width: 600px){
+  main{
+    display:flex;
+    justify-content: space-between;
+  }
+
+  #imagemprincipal{
+    max-width: auto ;
+    max-height: 300px;
     
-    #container {
-      display: flex;
-    }
-  
-    main {
-      flex: 75%;
-    }
-    
-    aside {
-      flex: 25%;
-    }  
   }
   
+  #textoprincipal{
+    font-size: 15px;
+    display:flex;
+    align-items: center;
+  }
+
+}
