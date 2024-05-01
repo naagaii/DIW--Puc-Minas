@@ -7,7 +7,7 @@ const formatadorMoedaReal = new Intl.NumberFormat('pt-BR', {
     currency: 'BRL'
 });
 
-function sacar(){
+function sacar() {
     let valorSaque = parseFloat(valorInput.value.trim());
     if (valorSaque > saldo) {
         alert("Saldo insuficiente.");
@@ -23,7 +23,7 @@ function sacar(){
     }
 }
 
-function depositar(){
+function depositar() {
     let valorDeposito = parseFloat(valorInput.value.trim());
     let confirmacao = confirm("Você deseja depositar " + formatadorMoedaReal.format(valorDeposito) + "?");
     if (confirmacao) {
@@ -35,7 +35,7 @@ function depositar(){
     }
 }
 
-function atualizarSaldo(valor){
+function atualizarSaldo(valor) {
     saldoSpan.textContent = formatadorMoedaReal.format(valor);
 }
 

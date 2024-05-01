@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora Básica</title>
+</head>
+<body>
+
+<h1>Calculadora Básica</h1>
+
+<script>
+  function calcular() {
+    let operacao = parseInt(document.getElementById("operacao").value);
+    let num1 = parseFloat(document.getElementById("num1").value);
+    let num2 = parseFloat(document.getElementById("num2").value);
+    let resultado;
+
+    switch (operacao) {
+      case 1:
+        resultado = num1 + num2;
+        alert("O resultado da soma é: " + resultado);
+        break;
+      case 2:
+        resultado = num1 - num2;
+        alert("O resultado da subtração é: " + resultado);
+        break;
+      case 3:
+        resultado = num1 * num2;
+        alert("O resultado da multiplicação é: " + resultado);
+        break;
+      case 4:
+        if (num2 !== 0) {
+          resultado = num1 / num2;
+          alert("O resultado da divisão é: " + resultado);
+        } else {
+          alert("Não é possível dividir por zero.");
+        }
+        break;
+      default:
+        alert("Operação inválida.");
+    }
+  }
+</script>
+
+<label for="operacao">Escolha a operação:</label>
+<select id="operacao">
+  <option value="1">Soma</option>
+  <option value="2">Subtração</option>
+  <option value="3">Multiplicação</option>
+  <option value="4">Divisão</option>
+</select><br>
+
+<label for="num1">Número 1:</label>
+<input type="text" id="num1"><br>
+
+<label for="num2">Número 2:</label>
+<input type="text" id="num2"><br>
+
+<button onclick="calcular()">Calcular</button>
+
+</body>
+</html>
