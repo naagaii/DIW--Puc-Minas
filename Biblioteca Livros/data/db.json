@@ -1,0 +1,95 @@
+
+    { "livros": [
+    {
+      "id": 1,
+      "titulo": "Dom Quixote",
+      "descricao": "A história de um cavaleiro que busca aventuras para restaurar a justiça.",
+      "imagem": "https://example.com/dom-quixote.jpg",
+      "detalheAdicional": "Autor: Miguel de Cervantes"
+    },
+    {
+      "id": 2,
+      "titulo": "Cem Anos de Solidão",
+      "descricao": "A saga de uma família ao longo de várias gerações em Macondo.",
+      "imagem": "https://example.com/cem-anos-de-solidao.jpg",
+      "detalheAdicional": "Autor: Gabriel García Márquez"
+    },
+    {
+      "id": 3,
+      "titulo": "Orgulho e Preconceito",
+      "descricao": "O romance de Elizabeth Bennet e Mr. Darcy na Inglaterra do século XIX.",
+      "imagem": "https://example.com/orgulho-e-preconceito.jpg",
+      "detalheAdicional": "Autora: Jane Austen"
+    },
+    {
+      "id": 4,
+      "titulo": "1984",
+      "descricao": "Um olhar distópico sobre um governo totalitário e vigilância massiva.",
+      "imagem": "https://example.com/1984.jpg",
+      "detalheAdicional": "Autor: George Orwell"
+    },
+    {
+      "id": 5,
+      "titulo": "O Pequeno Príncipe",
+      "descricao": "As aventuras de um príncipe em sua jornada por diferentes planetas.",
+      "imagem": "https://example.com/o-pequeno-principe.jpg",
+      "detalheAdicional": "Autor: Antoine de Saint-Exupéry"
+    },
+    {
+      "id": 6,
+      "titulo": "A Revolução dos Bichos",
+      "descricao": "Uma sátira que reflete sobre os perigos do autoritarismo e do poder corruptor.",
+      "imagem": "https://example.com/a-revolucao-dos-bichos.jpg",
+      "detalheAdicional": "Autor: George Orwell"
+    },
+    {
+      "id": 7,
+      "titulo": "O Hobbit",
+      "descricao": "A aventura de Bilbo Bolseiro em busca do tesouro guardado pelo dragão Smaug.",
+      "imagem": "https://example.com/o-hobbit.jpg",
+      "detalheAdicional": "Autor: J.R.R. Tolkien"
+    },
+    {
+      "id": 8,
+      "titulo": "Crime e Castigo",
+      "descricao": "A história de um estudante que comete um assassinato e as consequências desse ato.",
+      "imagem": "https://example.com/crime-e-castigo.jpg",
+      "detalheAdicional": "Autor: Fiódor Dostoiévski"
+    },
+    {
+      "id": 9,
+      "titulo": "Hamlet",
+      "descricao": "Uma tragédia sobre vingança, loucura e moralidade.",
+      "imagem": "https://example.com/hamlet.jpg",
+      "detalheAdicional": "Autor: William Shakespeare"
+    },
+    {
+      "id": 10,
+      "titulo": "A Metamorfose",
+      "descricao": "A história de Gregor Samsa, que acorda transformado em um inseto gigante.",
+      "imagem": "https://example.com/a-metamorfose.jpg",
+      "detalheAdicional": "Autor: Franz Kafka"
+    },
+    {
+      "id": 11,
+      "titulo": "As Crônicas de Nárnia",
+      "descricao": "As aventuras de crianças em um mundo mágico criado pelo leão Aslan.",
+      "imagem": "https://example.com/as-cronicas-de-narnia.jpg",
+      "detalheAdicional": "Autor: C.S. Lewis"
+    },
+    {
+      "id": 12,
+      "titulo": "Moby Dick",
+      "descricao": "A obsessão do capitão Ahab em caçar a baleia branca Moby Dick.",
+      "imagem": "https://example.com/moby-dick.jpg",
+      "detalheAdicional": "Autor: Herman Melville"
+    },
+    {
+      "id": 13,
+      "titulo": "A Divina Comédia",
+      "descricao": "Uma viagem épica pelo Inferno, Purgatório e Paraíso.",
+      "imagem": "https://example.com/a-divina-comedia.jpg",
+      "detalheAdicional": "Autor: Dante Alighieri"
+    }
+  ]}
+  
