@@ -1,4 +1,4 @@
-export class reposepositorioService {
+export class RepositorioService {
     constructor(){
         this.urlBase = "https://api.github.com";
     }

@@ -20,7 +20,7 @@ async function buscarRepositorios() {
         atualizarListaRepositorios(repositorios);
 
     } catch (error) {
-        alert(error); 
+        alert(error);
     }  
     
 }
