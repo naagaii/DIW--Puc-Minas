@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box; 
+  }
+  
+  header {
+    background-color: #eaccad;
+    color:  black;
+    padding: 40px;
+    text-align: right;
+    padding-right: 40px;
+    
+    ;
+    
+  }
+  .titulo{
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  .subtitulo{
+    font-family:Arial, Helvetica, sans-serif;
+
+  }
+  
+  .infopessoais{
+    list-style-type: none;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  aside {
+    background-color: #f3dbc3;
+    color: black;
+    
+  }
+
+  .imagem{
+    width: 180px; /* Defina o tamanho desejado para a imagem */
+    float: left; /* Para alinhar a imagem à esquerda */
+    margin-right: 20px;
+    margin-left: 30px;
+  }
+
+  .descricao{
+    padding-top: 15px;
+    text-align: center;
+    background-color: #eaccad;
+  
+  }
+  .habilidades{
+    padding-top: 70px;
+    text-align: center;
+    background-color: #eaccad;
+  }
+
+
+  .linguas{
+    text-align: center;
+    padding-top: 70px;
+    color: black;
+    background-color: #eaccad;
+  }
+
+  
+  main {
+    background-color: #fdecd4;
+    color: black;
+    padding: 32px;
+  }
+
+  .experiencia{
+    text-align: center;
+    padding-top: 80px;
+  }
+
+  .academica{
+    text-align: center;
+    padding-top: 80px;
+  }
+  
+  aside, main { 
+    padding: 32px; 
+    height: 585px;
+  }
+  
+  
+  
+  @media all and (min-width: 768px) {
+  
+    
+    #container {
+      display: flex;
+    }
+  
+    main {
+      flex: 75%;
+    }
+    
+    aside {
+      flex: 25%;
+    }  
+  }
+  
